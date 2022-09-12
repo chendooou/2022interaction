@@ -8,6 +8,13 @@ void setup(){
    face3 = flower[int(random(4))] + int(random(13)+1);
    face4 = flower[int(random(4))] + int(random(13)+1);
 }
+void mousePressed(){
+  String []flower = {"黑桃","紅心","方塊","梅花"}; //陣列{0,1,2,3}
+  face1 = flower[int(random(4))] + int(random(13)+1);
+  face2 = flower[int(random(4))] + int(random(13)+1);
+  face3 = flower[int(random(4))] + int(random(13)+1);
+  face4 = flower[int(random(4))] + int(random(13)+1);
+}
 String face1,face2,face3,face4;
 void draw(){
   drawPokerCard(100,100, face1); //使用函式
